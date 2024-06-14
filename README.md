@@ -3,7 +3,7 @@ OpenIFS is a FOSS image format which is created with the thought about quality w
 
 # This Image Format and its Features are still being developed
 
-# Fixes to do/fixed/remove/added
+# Fixes to do/fixed/removed/added
 - added option to convert from .ifs to formats like .webp .png .jpg .jpeg .jfif .gif 
 - fixed compatibility with older .ifs images so the 1st ever image created by OpenIFS (OpenIFS1st.zip) is still avalible to open and maybe if you want you can convert it to a .png and have it as a distorted wallpaper???
 - removed whole encryption, it could have been a cool feature but it had so many issues so i said fuck it and just did not make it anymore
