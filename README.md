@@ -17,6 +17,6 @@ OpenIFS is a FOSS image format which can be encrypted with a password or without
 # LIbraries to install
 - PyQt5
 - cryptography
-- zlib
+- bz2
 - opencv-python-headless
 - numpy
