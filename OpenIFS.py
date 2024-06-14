@@ -3,7 +3,7 @@ import struct
 import random
 import cv2
 import numpy as np
-import zlib
+import bz2
 import json
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QLabel, QVBoxLayout, QWidget, QToolBar, QAction, QInputDialog, QLineEdit, QMessageBox
 from PyQt5.QtGui import QPixmap, QImage, QPalette, QColor
@@ -88,8 +88,8 @@ def convert_image_to_format(image, password=None, delete_metadata=False):
     # Flatten the delta-encoded pixels
     flat_encoded_pixels = [value for pixel in encoded_pixels for value in pixel]
 
-    # Compress the data
-    compressed_data = zlib.compress(bytes(flat_encoded_pixels))
+    # Compress the data using bz2
+    compressed_data = bz2.compress(bytes(flat_encoded_pixels))
 
     # Encrypt the data if a password is provided
     if password:
@@ -126,8 +126,8 @@ def convert_format_to_image(data, password=None):
     else:
         compressed_data = encrypted_data
 
-    # Decompress the data
-    flat_encoded_pixels = list(zlib.decompress(compressed_data))
+    # Decompress the data using bz2
+    flat_encoded_pixels = list(bz2.decompress(compressed_data))
 
     # Convert the flat list of encoded pixels to a list of tuples
     encoded_pixels = [tuple(flat_encoded_pixels[i:i+channels]) for i in range(0, len(flat_encoded_pixels), channels)]
