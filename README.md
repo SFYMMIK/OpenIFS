@@ -1,3 +1,5 @@
+![Logo](logo.png)
+
 # About OpenIFS
 OpenIFS is a FOSS image format which is created with the thought about quality without sacrificing a lot of space its not based on any other image format and its color palette is RGB, its a pretty advanced project of mine so its gonna be hard
 
