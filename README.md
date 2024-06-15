@@ -11,6 +11,10 @@ OpenIFS is a FOSS image format which is created with the thought about quality w
 - removed the annoying ass meta and exif data window for removal of it and replaced it with just a question if you want to remove metadta cuz exif data and its removal is not suppoted by OpenCV
 - Forgot to add that the image which at first .png had 211kB in .ifs is actually 77kB without losing quality, 134kB less!!!
 
+# All Known Errors
+- Conversion error 256: RuntimeWarning: overflow encountered in scalar subtract
+  delta = tuple(((p - pp + 256) % 256) for p, pp in zip(pixel, prev_pixel))
+
 # TODO:
 - Give the program a better GUI
 
