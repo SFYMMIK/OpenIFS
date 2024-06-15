@@ -9,6 +9,7 @@ OpenIFS is a FOSS image format which is created with the thought about quality w
 - removed whole encryption, it could have been a cool feature but it had so many issues so i said fuck it and just did not make it anymore
 - somehow fixed but not fixed conversion error 256 so OpenIFS converts in the best quality it can but the error even tho it does pop up in the terminal, nothing is wrong so maybe my python is just fucked
 - removed the annoying ass meta and exif data window for removal of it and replaced it with just a question if you want to remove metadta cuz exif data and its removal is not suppoted by OpenCV
+- Forgot to add that the image which at first .png had 211kB in .ifs is actually 77kB without losing quality, 134kB less!!!
 
 # TODO:
 - Give the program a better GUI
